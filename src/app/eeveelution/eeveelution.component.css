@@ -1,0 +1,8 @@
+.eeveeSection {
+    display: flex;
+    align-items: center;
+}
+
+.eeveeSection img {
+    width: 200px;
+}
