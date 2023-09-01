@@ -9,14 +9,14 @@
     <img src="{{ (pokemon | evolve).imgURL }}" alt="">
 </div>
 <div class="eeveeSection">
-    <p>Eevee + Water Stone: {{(pokemon | evolve:'water stone').evolvedForm}}</p>
+    <p>{{pokemon}} + Water Stone: {{(pokemon | evolve:'water stone').evolvedForm}}</p>
     <img src="{{ (pokemon | evolve:'water stone').imgURL }}" alt="">
 </div>
 <div class="eeveeSection">
-    <p>Eevee + Thunder Stone: {{(pokemon | evolve:'thunder stone').evolvedForm}}</p>
+    <p>{{pokemon}} + Thunder Stone: {{(pokemon | evolve:'thunder stone').evolvedForm}}</p>
     <img src="{{ (pokemon | evolve:'thunder stone').imgURL }}" alt="">
 </div>
 <div class="eeveeSection">
-    <p>Eevee + Fire Stone: {{(pokemon | evolve:'fire stone').evolvedForm}}</p>
+    <p>{{pokemon}} + Fire Stone: {{(pokemon | evolve:'fire stone').evolvedForm}}</p>
     <img src="{{ (pokemon | evolve:'fire stone').imgURL }}" alt="">
 </div>
