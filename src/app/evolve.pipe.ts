@@ -10,7 +10,7 @@ export class EvolvePipe implements PipeTransform {
     let evolvedForm: string = ''
     if (!catalyst) {
       imgURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png'
-      evolvedForm = ''
+      evolvedForm = 'Eevee'
     } else {
       switch (catalyst) {
         case 'water stone':
