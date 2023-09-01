@@ -5,11 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class EvolvePipe implements PipeTransform {
 
-  transform(pokemon: string, catalyst?: string): unknown {
-    let imgURL = ''
-    let evolvedForm = ''
+  transform(pokemon: string, catalyst?: string): { imgURL: string, evolvedForm: string } {
+    let imgURL:string = ''
+    let evolvedForm: string = ''
     if (!catalyst) {
       imgURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png'
+      evolvedForm = ''
     } else {
       switch (catalyst) {
         case 'water stone':
@@ -29,14 +30,17 @@ export class EvolvePipe implements PipeTransform {
       }
     }
 
-    // return `
-    // <img [src]="${imgURL}">
-    // `
-    console.log(imgURL, evolvedForm)
-    return {imgURL, evolvedForm}
+  
+    console.log({imgURL, evolvedForm})
+    return {
+      imgURL: imgURL,
+      evolvedForm: evolvedForm
+    }
   }
-
 }
+
+
+
 // export class EvolvePipe implements PipeTransform {
 
 //   transform(pokemon: string, catalyst?: string): unknown {
