@@ -11,9 +11,10 @@ import { PipesForFunComponent } from './pipes-for-fun/pipes-for-fun.component';
 import { ExponentialStrengthPipe } from './exponential-strength.pipe';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { EeveelutionComponent } from './eeveelution/eeveelution.component';
 import { EvolvePipe } from './evolve.pipe';
+
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { EvolvePipe } from './evolve.pipe';
     MatDividerModule,
     MatInputModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

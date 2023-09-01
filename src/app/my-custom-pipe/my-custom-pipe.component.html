@@ -1,14 +1,13 @@
 <h2>Custom Pipe</h2>
-<form class="example-form">
+<form [formGroup]="form" class="example-form">
     <mat-form-field class="example-full-width">
       <mat-label>Give me a number!</mat-label>
-      <input matInput type="number">
+      <input matInput type="number" formControlName="power">
     </mat-form-field>
   
     <mat-form-field class="example-full-width">
       <mat-label>Give me a power factor!</mat-label>
-      <input matInput type="text">
+      <input matInput type="text" formControlName="factor">
     </mat-form-field>
   </form>
-<p>Exponential Strength Pipe: {{power | exponentialStrength: factor}}</p>
-<p>still need to hook up form</p>
+<p class="enbiggenMe">Exponential Strength Pipe: {{form.value.power | exponentialStrength: form.value.factor}}</p>
